@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.UserMapper">
+    <resultMap id="res" type="com.ssm.Entity.User">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="password" property="password"></result>
+        <association property="student" javaType="com.ssm.Entity.Student">
+            <id column="id" property="id"></id>
+            <result column="name" property="name"></result>
+            <result column="sex" property="sex"></result>
+            <result column="age" property="age"></result>
+        </association>
+    </resultMap>
+
+    <select id="login" parameterType="map" resultType="int">
+
+        SELECT count(*) from user where phonenumber=#{phonenumber} AND password=#{password}
+
+    </select>
+
+    <select id="findMyStudent" parameterType="String" resultMap="res">
+
+        select s.id,s.name,s.sex,s.age from user as u inner join t_student as s on u.phonenumber=s.phonenumber and u.phonenumber=#{phonenumber}
+
+    </select>
+
+</mapper>
