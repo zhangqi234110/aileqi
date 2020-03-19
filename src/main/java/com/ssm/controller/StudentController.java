@@ -25,7 +25,7 @@ public class StudentController {
     private  UserService userService;
 
     @RequestMapping(value = "/addStudent",method = RequestMethod.POST)
-    public String addStudent(@RequestParam("id")int id, @RequestParam("name")String name, @RequestParam("sex")String sex, @RequestParam("age")int age, @RequestParam(value = "phonenumber",required = false) String phonenumber, HttpSession session,Model model){
+    public String addStudent(@RequestParam("id")int id, @RequestParam("name")String name, @RequestParam("sex")String sex, @RequestParam("age")int age, @RequestParam(value = "phonenumber",required = false) String phonenumber, HttpSession session, Model model){
        phonenumber = (String) session.getAttribute("phonenumber");
         int i = studentService.addStudent(id,name,sex,age,phonenumber);
         List<Student> myStudent = userService.findMyStudent(phonenumber);

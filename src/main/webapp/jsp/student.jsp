@@ -144,8 +144,8 @@
     <tr>
                 <td><input type="text" name="id" value="${student.id}"></td>
                 <td><input type="text" name="name" value="${student.name}"></td>
-                <td><input type="text" name="sex" value="${student.sex}"></td>
-                <td><input type="text" name="age" value="${student.age}"></td>
+                <td><input type="text" name="sex"  onblur="if(/[^\u4E00-\u9FA5]/g.test(value))alert('内容格式有错')" value="${student.sex}"></td>
+                <td><input type="text" name="age"  onblur="if(/[^0-9]/g.test(value))alert('输入内容格式有错')" value="${student.age}"></td>
                 <td>
                     <button type="submit">修改</button>
                 </td>

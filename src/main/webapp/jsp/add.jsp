@@ -143,8 +143,8 @@ pageEncoding="UTF-8"%>
         <tr>
             <td><input type="text" name="id"></td>
             <td><input type="text" name="name"></td>
-            <td><input type="text" name="sex"></td>
-            <td><input type="text" name="age"></td>
+            <td><input type="text"   onblur="if(/[^\u4E00-\u9FA5]/g.test(value))alert('内容格式有错')" name="sex"></td>
+            <td><input type="text" onblur="if(/[^0-9]/g.test(value))alert('输入内容格式有错')" name="age"></td>
             <td><button type="submit">添加</button></td>
         </tr>
         </tbody>

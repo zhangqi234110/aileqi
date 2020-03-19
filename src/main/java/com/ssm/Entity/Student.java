@@ -1,5 +1,9 @@
 package com.ssm.Entity;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 /**
@@ -8,10 +12,19 @@ import java.io.Serializable;
 public class Student implements Serializable {
     private static final long serialVersionUID = 2414968881388126475L;
 
+    /*@NotNull*/
     private int id;
+
     private String name;
+
+    //@Size(min = 1,max=2)
     private String sex;
+
+    /*@Min(1)
+    @Max(100)
+    @NotNull*/
     private int age;
+
     private String phonenumber;
 
 
