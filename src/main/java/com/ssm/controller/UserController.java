@@ -58,5 +58,12 @@ public class UserController {
         }
     }
 
+    @RequestMapping("/loginOut")
+    public String loginOut(HttpSession session){
+        session.invalidate();
+        return "loginout";
+
+    }
+
 
 }

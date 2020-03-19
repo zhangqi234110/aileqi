@@ -97,17 +97,21 @@
                 </li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+           <ul class="nav navbar-nav navbar-right">
+                <li><a href="/loginOut"><span class="glyphicon glyphicon-user">退出</span></a></li>
+               <%-- <li class="dropdown">--%>
+<%--
+                    <a href="/loginOut"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">退出 <span class="caret"></span></a>
+--%>
+                    <%--<ul class="dropdown-menu">
                         <li><a href="/jsp/teacherlogin.jsp">我是老师</a></li>
                         <li><a href="#">我是家长</a></li>
                         <li><a href="#">我是校长</a></li>
                         <li><a href="#">少儿入口</a></li>
-                    </ul>
-                </li>
+                    </ul>--%>
+<%--
+               </li>
+--%>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

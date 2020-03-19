@@ -30,6 +30,7 @@ public class StudentController {
         int i = studentService.addStudent(id,name,sex,age,phonenumber);
         List<Student> myStudent = userService.findMyStudent(phonenumber);
         model.addAttribute("students",myStudent);
+        model.addAttribute("userphone",phonenumber);
         return "member";
     }
 
