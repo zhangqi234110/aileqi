@@ -39,6 +39,7 @@ public class StudentController {
         String phonenumber = (String) httpSession.getAttribute("phonenumber");
         List<Student> myStudent = userService.findMyStudent(phonenumber);
         model.addAttribute("students",myStudent);
+        model.addAttribute("userphone",phonenumber);
         return "member";
     }
 
@@ -56,6 +57,7 @@ public class StudentController {
         System.out.println(i);
         String phonenumber = (String) session.getAttribute("phonenumber");
         List<Student> myStudent = userService.findMyStudent(phonenumber);
+        model.addAttribute("userphone",phonenumber);
         model.addAttribute("students",myStudent);
         return "member";
     }

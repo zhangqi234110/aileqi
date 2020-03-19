@@ -133,7 +133,8 @@
         </div>
     </div>
 </div>
-<h1>我的账号：</h1><span>${userphone}</span>
+<span>${userphone}</span>:
+<img style="width:100px; height:100px; border-radius:50%;" src="/img/nvsheng.jpg">
 
 
         <table border="1" cellspacing="0" style="margin: auto">
