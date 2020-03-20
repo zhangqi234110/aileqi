@@ -32,4 +32,10 @@
 
     </update>
 
+    <select id="findId" parameterType="int" resultType="int">
+
+        select count(*) from t_student where id=#{id}
+
+    </select>
+
 </mapper>

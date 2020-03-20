@@ -27,11 +27,17 @@ public class StudentController {
     @RequestMapping(value = "/addStudent",method = RequestMethod.POST)
     public String addStudent(@RequestParam("id")int id, @RequestParam("name")String name, @RequestParam("sex")String sex, @RequestParam("age")int age, @RequestParam(value = "phonenumber",required = false) String phonenumber, HttpSession session, Model model){
        phonenumber = (String) session.getAttribute("phonenumber");
-        int i = studentService.addStudent(id,name,sex,age,phonenumber);
-        List<Student> myStudent = userService.findMyStudent(phonenumber);
-        model.addAttribute("students",myStudent);
-        model.addAttribute("userphone",phonenumber);
-        return "member";
+        int id1 = studentService.findId(id);
+        if (id1==0){
+            int i = studentService.addStudent(id,name,sex,age,phonenumber);
+            List<Student> myStudent = userService.findMyStudent(phonenumber);
+            model.addAttribute("students",myStudent);
+            model.addAttribute("userphone",phonenumber);
+            return "member";
+        }else {
+            return "tip";
+        }
+
     }
 
     @RequestMapping("/delete")

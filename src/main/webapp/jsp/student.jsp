@@ -128,7 +128,7 @@
 
 <table border="1" cellspacing="0" style="margin: auto">
     <caption>学生列表</caption>
-    <a href="/jsp/add.jsp">添加学生</a>>
+    <a href="/jsp/add.jsp">添加学生</a>
     <tbody>
     <tr>
         <td>学生编号</td>

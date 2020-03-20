@@ -14,4 +14,5 @@ public interface StudentMapper {
     int deleteOne(int id);
     Student findOne(int id);
     int updateOne(Student student);
+    int findId(int id);
 }

@@ -51,5 +51,10 @@ public class StudentServiceImpl implements StudentService {
         return i;
     }
 
+    @Override
+    public int findId(int id) {
+        return studentMapper.findId(id);
+    }
+
 
 }
