@@ -27,4 +27,9 @@ public class UserServiceImpl implements UserService {
     public List<Student> findMyStudent(String phonenumber) {
         return userMapper.findMyStudent(phonenumber);
     }
+
+    @Override
+    public int findPhonenumber(String phonenumber) {
+        return userMapper.findPhonenumber(phonenumber);
+    }
 }

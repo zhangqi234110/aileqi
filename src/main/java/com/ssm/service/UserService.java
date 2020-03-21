@@ -12,5 +12,6 @@ import java.util.List;
 public interface UserService {
     int login(@Param("phonenumber") String phonenumber, @Param("password") String password);
     List<Student> findMyStudent(String phonenumber);
+    int findPhonenumber(String phonenumber);
 }
 

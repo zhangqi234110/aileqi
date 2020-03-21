@@ -26,4 +26,10 @@
 
     </select>
 
+    <select id="findPhonenumber" parameterType="String" resultType="int">
+
+        select count(*) from user where phonenumber=#{phonenumber}
+
+    </select>
+
 </mapper>

@@ -42,18 +42,14 @@ pageEncoding="UTF-8"%>
 		<div align="center" style="width: 450px;background-color: aquamarine;border: 1px;border-color: #000000;float: right;padding-top: 1.875rem;">
 			<h2 style=";padding-right: 2.25rem;">老师登录</h2>
 		<%--	<div style="align-items: center;">--%>
-				<form action="/user" method="post" >
+				<form action="/message" method="post" >
 					<div class="input-group" style="padding-bottom: 2.5rem;;padding-right: 2.25rem;">
 					  <span class="input-group-addon" id="basic-addon1">请输入手机号</span>
 					  <input type="text" class="form-control" name="phonenumber" maxlength="11" placeholder="phonenumber" aria-describedby="basic-addon1">
 					</div>
-					<div class="input-group" style="padding-bottom: 2.5rem;padding-right: 2.25rem;">
-					  <span class="input-group-addon" id="basic-addon2">请输入密码</span>
-					  <input type="password" class="form-control" name="password" placeholder="password" aria-describedby="basic-addon1">
-					</div>
 						
 						<div class="btn-group" role="group" style="padding-bottom: 1.1rem;" aria-label="...">
-						  <button type="submit" style="width: 200px;background-color: #0066FF;" class="btn btn-default">登&nbsp;&nbsp;录</button>
+						  <button type="submit" style="width: 200px;background-color: #0066FF;" class="btn btn-default">发&nbsp;&nbsp;送</button>
 						</div>
 				</form>
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">爱乐奇用户隐私条款</button>
@@ -67,11 +63,7 @@ pageEncoding="UTF-8"%>
 							本政策涉及的个人信息包括：个人基本信息（包括 个人中文名、英文名、年龄、年级、性别、个人电话号码、电子邮箱）； 个人位置信息；网络身份标识信息（包括 系统账号及密码、IP地址）； 通讯录；；个人常用设备信息（包括 硬件型号、设备MAC地址、操作系统类型、软件列表、唯一设备识别码（如IMEI/android ID/IDFA/OPENUDID/GUID、SIM卡IMSI信息等在内的描述个人常用设备基本情况的信息）。 </p>
 					</div>
 				</div>
-			</div>
-				<p>_________________________________</p>
-				<a href="messagelogin.jsp">使用短信登录</a>
-			<%--</div>--%>
-		</div>
+
 
 
 
