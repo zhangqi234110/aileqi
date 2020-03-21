@@ -13,4 +13,6 @@ public interface UserMapper {
     int login(@Param("phonenumber") String phonenumber, @Param("password") String password);
     List<Student> findMyStudent(String phonenumber);
     int findPhonenumber(String phonenumber);
+    int register(@Param("phonenumber") String phonenumber, @Param("password") String password);
+
 }

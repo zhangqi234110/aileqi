@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService {
     public int findPhonenumber(String phonenumber) {
         return userMapper.findPhonenumber(phonenumber);
     }
+
+    @Override
+    public int register(String phonenumber, String password) {
+        return userMapper.register(phonenumber, password);
+    }
 }

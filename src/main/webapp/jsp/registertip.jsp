@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <script language=javascript>
-    setTimeout('window.location="http://localhost:8080/jsp/teacherlogin.jsp"',4000)
+    setTimeout('window.location="http://localhost:8080/jsp/teacherlogin.jsp"',3000)
 </script>
 <style type="text/css">
     p{
@@ -20,7 +20,7 @@
 </style>
 <body>
 <div id="tiao">
-    <p>您的账号或密码错误，请重新输入！如果无账号，请先注册</p>
+    <p>注册成功，正在前往教师登录界面</p>
 </div>
 
 </body>

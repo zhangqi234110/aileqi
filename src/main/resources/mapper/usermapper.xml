@@ -32,4 +32,10 @@
 
     </select>
 
+    <insert id="register" parameterType="map">
+
+        insert into user(phonenumber,password) values (#{phonenumber},#{password})
+
+    </insert>
+
 </mapper>

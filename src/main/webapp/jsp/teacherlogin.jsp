@@ -70,6 +70,7 @@ pageEncoding="UTF-8"%>
 			</div>
 				<p>_________________________________</p>
 				<a href="messagelogin.jsp">使用短信登录</a>
+				<<a href="Register.jsp">账号注册</a>
 			<%--</div>--%>
 		</div>
 

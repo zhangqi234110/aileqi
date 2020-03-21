@@ -29,6 +29,7 @@
             <mvc:exclude-mapping path="/user"/>
             <mvc:exclude-mapping path="/message"/>
             <mvc:exclude-mapping path="/code"/>
+            <mvc:exclude-mapping path="/register"/>
             <mvc:exclude-mapping path="/img/*"></mvc:exclude-mapping>
             <mvc:exclude-mapping path="/js/*"></mvc:exclude-mapping>
             <bean id="commonInterceptor" class="com.ssm.intercepter.MemberIntercepter"></bean> <!--这个类就是我们自定义的Interceptor -->

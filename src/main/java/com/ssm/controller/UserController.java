@@ -102,4 +102,12 @@ public class UserController {
         }
     }
 
+    @RequestMapping("/register")
+    public String register(@RequestParam("phonenumber") String phonenumber,@RequestParam("password") String password){
+        int register = userService.register(phonenumber, password);
+        return "registertip";
+
+
+    }
+
 }
